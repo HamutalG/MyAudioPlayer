@@ -1,0 +1,91 @@
+<!DOCTYPE html>
+<html>
+    <head>
+        <meta charset="utf-8" />
+        <title>Audio Player</title>
+        <script type="text/javascript" src="http://code.jquery.com/jquery-latest.min.js"></script>
+        <script src="https://code.jquery.com/ui/1.12.1/jquery-ui.js"></script>
+        <link rel="stylesheet" href="//code.jquery.com/ui/1.12.1/themes/base/jquery-ui.css">
+        <script type="text/javascript" src="JS/jquery.lettering.js"></script>
+        <script type="text/javascript" src="https://rawgit.com/peterhry/CircleType/master/dist/circletype.min.js"></script>
+        <link href="//maxcdn.bootstrapcdn.com/bootstrap/4.0.0/css/bootstrap.min.css" rel="stylesheet" id="bootstrap-css">
+        <script src="//maxcdn.bootstrapcdn.com/bootstrap/4.0.0/js/bootstrap.min.js"></script>
+        <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/css/bootstrap-theme.min.css" crossorigin="anonymous">
+        <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0-alpha.6/css/bootstrap.min.css" crossorigin="anonymous">
+        <script type="text/javascript" src="JS/main.js"></script>
+        <link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.2.0/css/all.css" crossorigin="anonymous">
+        <link href="https://fonts.googleapis.com/css?family=Cabin+Sketch|Monoton" rel="stylesheet">
+        <link rel="stylesheet" type="text/css"  href="CSS/styles.css">
+    </head>
+    <body>
+        <div class="container-fluid">
+            <nav class="navbar navbar-toggleable-md navbar-light bg-faded">
+                <button class="navbar-toggler navbar-toggler-right" type="button" data-toggle="collapse" data-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
+                    <span class="navbar-toggler-icon"></span>
+                </button>
+                <div class="collapse navbar-collapse" id="navbarSupportedContent">
+                    <ul class="navbar-nav mr-auto">
+                        <li data-toggle="modal" data-target="#modalWindow" id="addPlystItem" class="nav-item active">
+                            <i id="plusAddPlyst" class="fab fa-creative-commons-sampling-plus"></i><Label id="addPlyst">Add Playlist</Label>
+                        </li>
+                    </ul>
+                    <form class="form-inline my-2 my-lg-0">
+                        <input id="searchInput" class="form-control mr-sm-2" type="text" placeholder="Search">
+                        <button class="btn btn-outline-primary my-2 my-sm-0 searchBtn" type="submit">Search</button>
+                        <button class="btn btn-outline-primary my-2 my-sm-0 showAllBtn">Show All Playlists</button>
+                    </form>
+                    
+                </div>
+            </nav>
+            <h1 id="mainTitle">Audio Player</h1>
+
+            <div class="playerContainer">
+
+                <div class="innerPlayer">
+                    <div>
+                        <div class="playerImg">
+                        </div>
+                        <div class="playerContent">
+                            <audio controls id="songAudio">
+                                <source />
+                                Your browser does not support the audio element.
+                            </audio>
+                            <div class="nowPlaying"></div>
+                            <div>
+                                <ol class="songsList">
+                                </ol>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+
+                <div class="outerPlayer">
+                </div>
+
+            </div>
+
+            <div class="row playListsContainer">
+            </div>
+
+            <div id="modalWindow" class="modal" tabindex="-1" role="dialog">
+                <div class="modal-dialog" role="document">
+                    <div class="modal-content">
+                        <div class="modal-header">
+                            <h5 class="modal-title"><!--Modal title--></h5>
+                            <button type="button" class="close" data-dismiss="modal" aria-label="Close">
+                                <span aria-hidden="true">&times;</span>
+                            </button>
+                        </div>
+                        <div class="modal-body">
+                            <p><!--Modal body text goes here.--></p>
+                        </div>
+                        <div class="modal-footer">
+                            <!--Modal footer-->
+                        </div>
+                    </div>
+                </div>
+            </div>
+
+        </div>
+    </body>
+</html>

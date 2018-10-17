@@ -1,0 +1,10 @@
+Options -Indexes 
+
+RewriteEngine on
+RewriteRule ^playlist$ ./DB/playlist.php?type=playlist [L]
+RewriteRule ^playlist/([0-9]+)$ ./DB/playlist.php?type=playlist&id=$1 [L]
+RewriteRule ^playlist/([0-9]+)/songs$ ./DB/playlist.php?type=songs&id=$1 [L]
+
+RewriteCond %{REQUEST_FILENAME} !-f
+RewriteCond %{REQUEST_FILENAME} !-d
+RewriteRule ^(.*)$ ./DB/playlist.php?404=$1 [L,QSA]

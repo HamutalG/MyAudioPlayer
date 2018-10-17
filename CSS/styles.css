@@ -1,0 +1,500 @@
+body{
+    background-image: url("images/background2.png");
+    background-position: center;
+    background-repeat: no-repeat;
+    background-size: cover;
+    height: 100%;
+
+}
+
+.navbar {
+    position: fixed;
+    top:0;
+    background: #f5f6f6; /* Old browsers */
+    background: -moz-linear-gradient(top, #f5f6f6 0%, #dbdce2 21%, #b8bac6 49%, #dddfe3 80%, #f5f6f6 100%); /* FF3.6-15 */
+    background: -webkit-linear-gradient(top, #f5f6f6 0%,#dbdce2 21%,#b8bac6 49%,#dddfe3 80%,#f5f6f6 100%); /* Chrome10-25,Safari5.1-6 */
+    background: linear-gradient(to bottom, #f5f6f6 0%,#dbdce2 21%,#b8bac6 49%,#dddfe3 80%,#f5f6f6 100%); /* W3C, IE10+, FF16+, Chrome26+, Opera12+, Safari7+ */
+    filter: progid:DXImageTransform.Microsoft.gradient( startColorstr='#f5f6f6', endColorstr='#f5f6f6',GradientType=0 ); /* IE6-9 */
+    color: black;
+    -webkit-box-shadow: 0px 1px 5px 0px rgba(0,0,0,0.75);
+    -moz-box-shadow: 0px 1px 5px 0px rgba(0,0,0,0.75);
+    box-shadow: 0px 1px 5px 0px rgba(0,0,0,0.75);
+    min-width: 98%;
+    min-height: 60px;
+    font-family: 'Cabin Sketch', cursive;
+    opacity: .80;
+    z-index: 100;
+}
+
+#searchInput{
+    -moz-box-shadow:    inset 0 0 5px #4169E1;
+    -webkit-box-shadow: inset 0 0 5px #4169E1;
+    box-shadow:         inset 0 0 5px #4169E1;
+    font-family: 'Cabin Sketch', cursive;
+}
+
+.btn-outline-success {
+    color: black;
+    border-color: black;
+}
+
+#plusAddPlyst{
+    font-size:40px;
+    margin-right: 10px;
+    color: #4169E1;
+    cursor: pointer;
+}
+
+#addPlyst{
+    cursor: pointer;
+    color: #4169E1;
+    font-size: 150%;
+}
+
+.navbar-light .navbar-nav .nav-link {
+    color: gray;
+}
+
+.navbar-light .navbar-brand, .navbar-light .navbar-toggler {
+    color: blue;
+}
+
+.searchBtn, .showAllBtn{
+    font-family: 'Cabin Sketch', cursive;
+}
+
+.showAllBtn{
+    float: right;
+    margin-left: 10px;
+}
+
+#mainTitle{
+    text-align: center;
+    margin: 120px 0px 60px 0px;
+    font-family: 'Monoton', cursive;
+}
+
+.playListsContainer{
+    margin-top: 50px;
+}
+
+.recordContainer{
+    margin-top: 50px;
+}
+
+.record {
+    width: 180px;
+    height: 180px;
+    margin: 60px 0px 0px 60px;
+    border-radius: 50%;
+}
+
+.eachPlaylist {
+    position: relative;
+    width:350px;
+    height: 325px;
+}
+
+.backgrndimg {
+    background-image: url("images/record.png");
+    background-size: 300px; 
+    width: 300px;
+    height: 300px;
+    display: block;
+    margin: 0 auto;
+}
+
+.plyBtn2 {
+    width: 50px;
+    height: 50px;
+    position: absolute;
+    display: block;
+    margin: 125px 150px;
+    border: 1px solid #4169E1;
+    float:left;
+    cursor: pointer;
+    color: #4169E1;
+    border-radius: 50%;
+    background-image: -webkit-radial-gradient( 50% 0%, 8% 50%, hsla(0,0%,100%,.5) 0%, hsla(0,0%,100%,0) 100%), 
+        -webkit-radial-gradient( 50% 100%, 12% 50%, hsla(0,0%,100%,.6) 0%, hsla(0,0%,100%,0) 100%), 
+        -webkit-radial-gradient( 0% 50%, 50% 7%, hsla(0,0%,100%,.5) 0%, hsla(0,0%,100%,0) 100%), 
+        -webkit-radial-gradient( 100% 50%, 50% 5%, hsla(0,0%,100%,.5) 0%, hsla(0,0%,100%,0) 100%), 
+        -webkit-repeating-radial-gradient( 50% 50%, 100% 100%, hsla(0,0%, 0%,0) 0%, hsla(0,0%, 0%,0) 3%, hsla(0,0%, 0%,.1) 3.5%), 
+        -webkit-repeating-radial-gradient( 50% 50%, 100% 100%, hsla(0,0%,100%,0) 0%, hsla(0,0%,100%,0) 6%, hsla(0,0%,100%,.1) 7.5%), 
+        -webkit-repeating-radial-gradient( 50% 50%, 100% 100%, hsla(0,0%,100%,0) 0%, hsla(0,0%,100%,0) 1.2%, hsla(0,0%,100%,.2) 2.2%), 
+        -webkit-radial-gradient( 50% 50%, 200% 50%, hsla(0,0%,90%,1) 5%, hsla(0,0%,85%,1) 30%, hsla(0,0%,60%,1) 100%);
+}
+
+.plyBtn{
+    font-size: 30px;
+    cursor: pointer;
+    margin: 9px 14px;
+    text-shadow: -0.5px 0 white, 0 0.5px white, 0.5px 0 white, 0 -0.5px white;
+}
+
+.editBtn, .deleteBtn, .playerEdit, .playerDelete {
+    font-size: 20px;
+    cursor: pointer;
+    margin: 9px 10px;
+    text-shadow: -0.5px 0 white, 0 0.5px white, 0.5px 0 white, 0 -0.5px white;
+    position: absolute;
+    display: none;
+}
+
+.plyBtn3, .plyBtn4, .plyBtn5, .plyBtn6 {
+    width: 40px;
+    height: 40px;
+    position: absolute;
+    margin: 60px 210px;
+    border: 1px solid #4169E1;
+    cursor: pointer;
+    color: #4169E1;
+    border-radius: 50%;
+    background-image: -webkit-radial-gradient( 50% 0%, 8% 50%, hsla(0,0%,100%,.5) 0%, hsla(0,0%,100%,0) 100%), 
+        -webkit-radial-gradient( 50% 100%, 12% 50%, hsla(0,0%,100%,.6) 0%, hsla(0,0%,100%,0) 100%), 
+        -webkit-radial-gradient( 0% 50%, 50% 7%, hsla(0,0%,100%,.5) 0%, hsla(0,0%,100%,0) 100%), 
+        -webkit-radial-gradient( 100% 50%, 50% 5%, hsla(0,0%,100%,.5) 0%, hsla(0,0%,100%,0) 100%), 
+        -webkit-repeating-radial-gradient( 50% 50%, 100% 100%, hsla(0,0%, 0%,0) 0%, hsla(0,0%, 0%,0) 3%, hsla(0,0%, 0%,.1) 3.5%), 
+        -webkit-repeating-radial-gradient( 50% 50%, 100% 100%, hsla(0,0%,100%,0) 0%, hsla(0,0%,100%,0) 6%, hsla(0,0%,100%,.1) 7.5%), 
+        -webkit-repeating-radial-gradient( 50% 50%, 100% 100%, hsla(0,0%,100%,0) 0%, hsla(0,0%,100%,0) 1.2%, hsla(0,0%,100%,.2) 2.2%), 
+        -webkit-radial-gradient( 50% 50%, 200% 50%, hsla(0,0%,90%,1) 5%, hsla(0,0%,85%,1) 30%, hsla(0,0%,60%,1) 100%);
+    display: none;
+}
+
+.plyBtn5, .plyBtn6, .playerEdit, .playerDelete {
+    display: block;
+}
+
+.eachPlaylist :hover .plyBtn3{
+    display: block;
+}
+
+.eachPlaylist :hover .editBtn{
+    display: block;
+}
+
+.eachPlaylist :hover .plyBtn4{
+    display: block;
+}
+
+.eachPlaylist :hover .deleteBtn{
+    display: block;
+}
+
+.plyBtn4 {
+    margin: 60px 100px;
+}
+
+.addPlylstNameURL, .editPlylstNameURL{
+    width: 300px;
+}
+
+.addName, .addUrl, .editName, .editUrl, .modal-title, .songURLNameLabel {
+    color: #4169E1;
+} 
+
+.editUrl{
+    margin-top: 20px;
+}
+
+.plylstName, .plylstURL, .editplylstName, .editplylstURL{
+    width: 290px;
+    display: block;
+    float: left;
+    font-family: 'Cabin Sketch', cursive;
+
+}
+
+.plylstName{
+    margin-bottom: 20px;
+}
+
+::-webkit-input-placeholder { /* Chrome/Opera/Safari */
+    font-size: 80%;
+    text-align: center;
+    color: lightgray;
+}
+::-moz-placeholder { /* Firefox 19+ */
+    font-size: 80%;
+    text-align: center;
+    color: lightgray;
+}
+:-ms-input-placeholder { /* IE 10+ */
+    font-size: 80%;
+    text-align: center;
+    color: lightgray;
+}
+:-moz-placeholder { /* Firefox 18- */
+    font-size: 80%;
+    text-align: center;
+    color: lightgray;
+}
+
+.previewImg{
+    width: 300px;
+    float: left;
+    display: inline-block;
+    position: relative;
+    bottom: 90px;
+    margin-left: 85px;
+}
+
+.modal-footer{
+    width: 100%;
+    height: 70px;
+    position: relative;
+}
+
+.resetBtn {
+    position: absolute;
+    width: 140px;
+    display: block;
+    float: left;
+    left: 10px;
+    font-family: 'Cabin Sketch', cursive;
+}
+
+.inputErr, .inputErr2{
+    position: absolute;
+    width: 200px;
+    color: red;
+    display: block;
+    float: left;
+    right: 100px;
+    font-family: 'Cabin Sketch', cursive;
+}
+
+.inputErr2{
+    right: 150px;
+}
+
+.addPlystNextBtn, .editPlystNextBtn{
+    font-family: 'Cabin Sketch', cursive;
+    position: absolute;
+    right: 10px;
+}
+
+.songURL, .songName {
+    width: 260px;
+    font-family: 'Cabin Sketch', cursive;
+}
+
+.addAnotherSong {
+    width: 170px;
+    position: absolute;
+    left: 10px;
+    font-family: 'Cabin Sketch', cursive;
+}
+
+.saveAndFinish, .editSaveAndFinish{
+    position: absolute;
+    right: 10px;
+    font-family: 'Cabin Sketch', cursive;
+}
+
+.modal-content {
+    width: 38em;
+    font-family: 'Cabin Sketch', cursive;
+    font-size: 125%;
+}
+
+.deleteSongURLRow, .deleteSongURLRow2{
+    position: absolute;
+    top: 7px;
+    right: -32px;
+    cursor: pointer;
+}
+
+.addSongNameURL, .editSongNameURL {
+    position: relative;
+    width: 690px;
+    display: block;
+    float: left;
+    margin: 10px 0px 10px 0px;
+}
+
+.songName, .songURL {
+    display: inline-block;
+}
+
+.songURLNameLabel {
+    margin-right: 5px;
+}
+
+.addSongLabel{
+    margin-left: 10px;
+}
+
+.playerContainer {
+    width: 700px;
+    height: 250px;
+    margin: 0 auto;
+}
+
+.playerImg{
+    background-image: url("images/record.png");
+    background-size: 250px;
+    position: relative;
+    float: left;
+    width: 250px;
+    height: 250px;
+}
+
+#ImgInPlayer{
+    width: 150px;
+    height: 150px;
+    border-radius: 50%;
+    margin: 50px 0px 0px 50px;
+    -webkit-animation-name: spin;
+    -webkit-animation-duration: 5000ms;
+    -webkit-animation-iteration-count: infinite;
+    -webkit-animation-timing-function: linear;
+    -moz-animation-name: spin;
+    -moz-animation-duration: 5000ms;
+    -moz-animation-iteration-count: infinite;
+    -moz-animation-timing-function: linear;
+    -ms-animation-name: spin;
+    -ms-animation-duration: 5000ms;
+    -ms-animation-iteration-count: infinite;
+    -ms-animation-timing-function: linear;
+    animation-name: spin;
+    animation-duration: 5000ms;
+    animation-iteration-count: infinite;
+    animation-timing-function: linear;
+}
+
+@-moz-keyframes spin {
+    from { -moz-transform: rotate(0deg); }
+    to { -moz-transform: rotate(360deg); }
+}
+@-webkit-keyframes spin {
+    from { -webkit-transform: rotate(0deg); }
+    to { -webkit-transform: rotate(360deg); }
+}
+@keyframes spin {
+    from {transform:rotate(0deg);}
+    to {transform:rotate(360deg);}
+}
+
+.playerContent{
+    display: block;
+    width: 350px;
+    float: left;
+}
+
+.innerPlayer {
+    background: #4169e1; /* Old browsers */
+    background: -moz-linear-gradient(top, #4169e1 0%, #44b4ff 100%); /* FF3.6-15 */
+    background: -webkit-linear-gradient(top, #4169e1 0%,#44b4ff 100%); /* Chrome10-25,Safari5.1-6 */
+    background: linear-gradient(to bottom, #4169e1 0%,#44b4ff 100%); /* W3C, IE10+, FF16+, Chrome26+, Opera12+, Safari7+ */
+    filter: progid:DXImageTransform.Microsoft.gradient( startColorstr='#4169e1', endColorstr='#44b4ff',GradientType=0 ); /* IE6-9 */
+    -moz-box-shadow: inset 2px 2px 2px rgba(255, 255, 255, .4), inset -2px -2px 2px rgba(0, 0, 0, .4);
+    -webkit-box-shadow: inset 2px 2px 2px rgba(255, 255, 255, .4), inset -2px -2px 2px rgba(0, 0, 0, .4);
+    box-shadow: inset 2px 2px 2px rgba(255, 255, 255, .4), inset -2px -2px 2px rgba(0, 0, 0, .4);
+    display: block;
+    width: 620px;
+    height: 250px;
+    border-radius: 125px;
+    float: left;
+    border: 2px solid white;
+}
+
+.outerPlayer {
+    display: block;
+    width: 50px;
+    float: left;
+}
+
+#songAudio {
+    width: 280px;
+    margin-top: 20px;
+    opacity: .8;
+}
+
+.plyBtn5{
+    margin: 60px 30px;
+}
+
+.plyBtn6{
+    margin: 145px 30px;
+}
+
+.nowPlaying{
+    font-family: 'Cabin Sketch', cursive;
+    margin: 10px;
+    font-size: 125%;
+    max-height: 10vh;
+    overflow-x: hidden;
+    overflow-y: auto;
+    overflow-wrap: break-word;    
+}
+
+.nowPlaying::-webkit-scrollbar {
+    width: 12px;
+    height: 12px;
+}
+
+.nowPlaying::-webkit-scrollbar-track {
+    border: 1px solid #4169e1;
+    border-radius: 10px;
+}
+
+.nowPlaying::-webkit-scrollbar-thumb {
+    background: #4169e1;  
+    border-radius: 10px;
+}
+
+.nowPlaying::-webkit-scrollbar-thumb:hover {
+    background: darkblue;  
+}
+
+.nowPlayingLabel{
+    color: white;
+    width: 120px;
+    margin-right: 20px;
+    text-decoration: underline;
+    display: inline;
+}
+
+.nameOfSong{
+    font-weight: bold;
+    display: inline-block;
+}
+
+.songsList{
+    font-family: 'Cabin Sketch', cursive;
+    width: 280px;
+    max-height: 9vh;
+    overflow-x: hidden;
+    overflow-y: auto;
+    overflow-wrap: break-word;
+}
+
+.songsList::-webkit-scrollbar {
+    width: 12px;
+    height: 12px;
+}
+
+.songsList::-webkit-scrollbar-track {
+    border: 1px solid #4169e1;
+    border-radius: 10px;
+}
+
+.songsList::-webkit-scrollbar-thumb {
+    background: #4169e1;  
+    border-radius: 10px;
+}
+
+.songsList::-webkit-scrollbar-thumb:hover {
+    background: darkblue;  
+}
+
+.plylstTitle {
+    position: absolute;
+    padding: 0px;
+    left: 170px;
+    top: -20px;
+    font-family: 'Cabin Sketch', cursive;
+    color: #4169e1;
+}
+
