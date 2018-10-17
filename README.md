@@ -35,6 +35,7 @@ The project is written using:
 This project requires:
 - An integrated development environment that allows applications to be developed from modules. I used [NetBeans](https://netbeans.org/)
 - A cross-platform web server solution consisting of the Apache HTTP Server, MariaDB database (MySQL), and interpreters for scripts written in the PHP languages. I used [XAMPP](https://www.apachefriends.org/)
+- Upload "playlist.sql" to the database (phpMyAdmin) to see (and hear) existing playlists
 
 
  
