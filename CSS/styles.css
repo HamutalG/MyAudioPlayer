@@ -294,6 +294,8 @@ body{
 
 .modal-content {
     width: 38em;
+    top: 30px;
+    right: 25%;
     font-family: 'Cabin Sketch', cursive;
     font-size: 125%;
 }
