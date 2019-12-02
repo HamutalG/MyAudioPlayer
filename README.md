@@ -1,4 +1,4 @@
-# [My Audio Player](https://myonlineaudioplayer.000webhostapp.com/)
+# My Audio Player
 #### JQuery - AJAX
 
 A one-page webpage that presents an audio player as well as the various playlists created by the user.  
